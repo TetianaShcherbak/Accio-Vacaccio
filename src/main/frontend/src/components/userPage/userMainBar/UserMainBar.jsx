@@ -3,6 +3,7 @@ import InformationAboutUser from "./userMainBarComponents/informationAboutUser/I
 import CountryCounter from "./userMainBarComponents/countryCounter/CountryCounter";
 import {Card} from "react-bootstrap";
 import "./UserMainBar.css"
+import TravelerSurvey from "./userMainBarComponents/travelerSurvey/TravelerSurvey";
 
 const UserMainBar = () => {
     return (
@@ -16,6 +17,7 @@ const UserMainBar = () => {
                 <Card.Text>
                     <InformationAboutUser/>
                     <CountryCounter/>
+                    <TravelerSurvey />
                 </Card.Text>
             </Card.Body>
         </Card>

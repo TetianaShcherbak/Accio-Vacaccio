@@ -1,8 +1,10 @@
 package com.codecool.travelhelper.aws.database.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "MyUserTable")
@@ -70,6 +72,13 @@ public class MyUserTable {
     // trips to user
     @OneToMany(mappedBy = "myUserTable")
     List<TripTable> tripsTable;
+
+//---------------------------------------------------
+    // answers to user
+    @ManyToMany(mappedBy = "usersList")
+    @JsonIgnore
+    List<SurveyAnswersTable> chosenAnswers = new ArrayList<>();
+
 
 //---------------------------------------------------
 
