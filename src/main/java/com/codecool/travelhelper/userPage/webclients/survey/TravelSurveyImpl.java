@@ -8,6 +8,10 @@ import com.codecool.travelhelper.aws.database.repositories.SurveyQuestionsReposi
 import com.codecool.travelhelper.aws.database.repositories.UserRepository;
 import com.codecool.travelhelper.userPage.models.survey.SurveyFieldModel;
 import com.codecool.travelhelper.userPage.models.survey.TravelerSurveyModel;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -44,24 +48,34 @@ public class TravelSurveyImpl {
                 .build();
     }
 
-    public void updateSurvey(String userId, String chosenAnswers){
-//        JsonParser jsonParser = new JsonParser();
-//        JsonObject surveyJsonObject = (JsonObject)jsonParser.parse(chosenAnswers);
-//        String newNoteText = surveyJsonObject.get("noteText").getAsString();
-//
-//        NoteTable newNoteTable = new NoteTable(newNoteText, userFromDB);
-//
-//        Optional<NoteTable> response = noteRepository.findAllByMyUserTableId(userId);
-//
-//        if (response.isPresent()){
-//            updatedResponseObject = response.get();
-//            updateResponseObject(newNoteTable, updatedResponseObject);
-//        } else {
-//            updatedResponseObject = newNoteTable;
-//        }
-//
-//        noteRepository.save(updatedResponseObject);
 
+    /**
+     * Example chosenAnswers = {
+     *     chosen_answer_id_list: [id_1, id_2, ...]
+     * }
+     *
+     * @param userId
+     * @param chosenAnswers
+     */
+    public void updateSurvey(String userId, String chosenAnswers){
+        List<SurveyAnswersTable> newAnswers = new ArrayList<>();
+
+        JsonParser jsonParser = new JsonParser();
+        JsonObject surveyJsonObject = (JsonObject)jsonParser.parse(chosenAnswers);
+        JsonArray chosenAnswerIdList = surveyJsonObject.get("chosen_answer_id_list").getAsJsonArray();
+
+        MyUserTable user = userRepository.getOne(Long.valueOf(userId));
+
+        for (JsonElement chosenAnswerId: chosenAnswerIdList) {
+            Long answerId = Long.valueOf(chosenAnswerId.getAsString());
+            SurveyAnswersTable answersTable = answersRepository.findById(answerId).get();
+            answersTable.getUsersList().add(user);
+            newAnswers.add(answersTable);
+        }
+
+        user.setChosenAnswers(newAnswers);
+
+        userRepository.save(user);
     }
 
 

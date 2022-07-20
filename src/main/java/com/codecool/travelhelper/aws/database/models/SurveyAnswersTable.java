@@ -34,6 +34,7 @@ public class SurveyAnswersTable {
     // answers to question
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "question_id", referencedColumnName = "question_id")
+    @JsonIgnore
     private SurveyQuestionsTable question;
 //------------------------------------------------------
     // answers to user
