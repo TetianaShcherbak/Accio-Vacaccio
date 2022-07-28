@@ -9,11 +9,15 @@ import { LoginContext } from "./Context";
 function App() {
     const [loggedIn, setLoggedIn] = useState(false);
     return (
-        //style={{ textAlign: 'center' }}
-        <LoginContext.Provider  value={{loggedIn, setLoggedIn}}>
-            <Header />
-            <Outlet />
-        </LoginContext.Provider>
+
+            <LoginContext.Provider  value={{loggedIn, setLoggedIn}}>
+                <div style={{ textAlign: 'center' }}>
+                <Header />
+                <Outlet />
+                </div>
+            </LoginContext.Provider>
+
+
     );
 }
 export default App;
