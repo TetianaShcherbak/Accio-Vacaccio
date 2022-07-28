@@ -1,15 +1,17 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './Header.css';
 import {Button, Container, Nav, Navbar} from 'react-bootstrap';
 import LoginModal from '../modals/loginModal/LoginModal';
 import RegistrationModal from '../modals/registrationModal/RegistrationModal';
 import axios from "axios";
 import {Link} from "react-router-dom";
-
+import { LoginContext } from "../../Context";
 
 const Header = () => {
     const [loginModalOpen, setLoginModalOpen] = useState(false);
     const [registrationModalOpen, setRegistrationModalOpen] = useState(false);
+
+    const {loggedIn, setLoggedIn} = useContext(LoginContext)
 
     const sendLogoutRequest = () => {
         const url = "http://localhost:8080/logout";
@@ -27,6 +29,8 @@ const Header = () => {
         sessionStorage.removeItem("userId")
         window.location.reload();
     }
+
+
 
 
     return (
