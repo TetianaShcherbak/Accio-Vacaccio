@@ -27,8 +27,6 @@ const LoginModal = (props) => {
         setErrorModalOpen(true);
     }
 
-
-
     const sendDataToServer = () => {
             const url = "http://localhost:8080/login";
             axios.post(url,{
