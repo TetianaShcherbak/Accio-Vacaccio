@@ -54,3 +54,12 @@ User has access to features as:
 As a frontend solution was chosen **React** library based on **JavaScript** language.
 
 As a CSS framework was chosen **React Bootstrap** solution.
+
+
+## **How to run App**
+
+1. In case appeared message about enable **Lombok** (in IDE), please, do it.
+2. Open the terminal (cmd) window in src/main/frontend root.
+3. Provide: 
+ - ```npm i react```;
+ - ``` npm start```.
