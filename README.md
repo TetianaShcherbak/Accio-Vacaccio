@@ -64,7 +64,8 @@ As a CSS framework was chosen **React Bootstrap** solution.
  - ```npm i react```;
  - ``` npm start```.
 
-##**In case something went wrong, see here ... **
+
+## **In case something went wrong, see here ...**
 
 In any case, please, mail as to *shcherbak.tet@gmail.com* about problem appired.
 
