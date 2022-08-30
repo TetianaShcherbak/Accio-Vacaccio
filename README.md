@@ -69,9 +69,11 @@ As a CSS framework was chosen **React Bootstrap** solution.
 In any case, please, mail as to *shcherbak.tet@gmail.com* about problem appired.
 
 1. You tried to run an App and appered Error "Cannot configure hibernate EntityManager configuration" =>
+
    We can fix it! The couse it apeared is AWS accout expired and we should restore it.
 2. You chose a city and some info didn't render and in console appered message with "HTTP code 429" => 
+
    It means, that given amount of requests already used.
    There a two possible couses: 
-    -- Expired amount of requests per day for some API;
-    -- Expired amount of requests at all for some API and we will be needed to change an account.
+    - Expired amount of requests per day for some API;
+    - Expired amount of requests at all for some API and we will be needed to change an account.
