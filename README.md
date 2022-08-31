@@ -51,8 +51,8 @@ Nice to see you interested in **Accio Vacaccio**.
   <table>
     <thead>
       <tr>
-       <td>       Technologies Backend         </td>
-       <td>      Technologies Frontend      </td>
+       <td>`       **Technologies Backend**         `</td>
+       <td>`      **Technologies Frontend**      `</td>
       </tr>
     </thead>
     <tbody>
@@ -83,15 +83,6 @@ Nice to see you interested in **Accio Vacaccio**.
     </tbody>
 
   </table>
-
-          |       Technologies Backend         |      Technologies Frontend      |
-          |------------------------------------|---------------------------------|
-          | Java + Spring Boot                 |    JavaScript (ES6)             |
-          | Spring Security (JWT token)        |    React.js                     |
-          | AWS S3 bucket (for images storing) |    React Bootstrap              |
-          | PostreSQL (as engine for AWS RDS)  |                                 |
-          | Hibernate (ORM)                    |                                 |
-          | Google sign in and map (API)       |                                 |
   
 # **How to run App**
 
