@@ -49,8 +49,8 @@ Nice to see you interested in **Accio Vacaccio**.
   ## **Summary**
   
   <table>
-    <thead style="background-color:grey">
-      <tr>
+    <thead>
+      <tr style="background-color:grey">
        <td>       <b>Technologies Backend</b>         </td>
        <td>      <b>Technologies Frontend</b>      </td>
       </tr>
