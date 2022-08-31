@@ -47,6 +47,42 @@ Nice to see you interested in **Accio Vacaccio**.
     As a CSS framework was chosen **React Bootstrap** solution.
     
   ## **Summary**
+  
+  <table>
+    <thead>
+      <tr>
+       <td>       Technologies Backend         </td>
+       <td>      Technologies Frontend      </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Java + Spring Boot                 </td>
+        <td>    JavaScript (ES6)             </td>
+      </tr>
+      <tr>
+        <td> Spring Security (JWT token)        </td>
+        <td>    React.js                     </td>
+      </tr>
+     <tr>
+        <td> AWS S3 bucket (for images storing) </td>
+        <td>    React Bootstrap              </td>
+      </tr>
+     <tr>
+        <td> PostreSQL (as engine for AWS RDS)  </td>
+        <td>                                 </td>
+      </tr>
+      <tr>
+        <td> Hibernate (ORM)                    </td>
+        <td>                                 </td>
+      </tr>
+     <tr>
+        <td> Google sign in and map (API)       </td>
+        <td>                                 </td>
+      </tr>
+    </tbody>
+
+  </table>
 
           |       Technologies Backend         |      Technologies Frontend      |
           |------------------------------------|---------------------------------|
