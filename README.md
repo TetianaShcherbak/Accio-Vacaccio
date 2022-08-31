@@ -28,31 +28,31 @@ Nice to see you interested in **Accio Vacaccio**.
 
   ## **Backend**
 
-    The application is based on **Java** language on **Spring** framework in **Spring Boot** tool.
+   The application is based on **Java** language on **Spring** framework in **Spring Boot** tool.
 
-    As RDBMS was chosen **AWS RDS** with **PostgreSQL** engine.
+   As RDBMS was chosen **AWS RDS** with **PostgreSQL** engine.
 
-    Storing all photos in cloud (implemented using **AWS S3**).
+   Storing all photos in cloud (implemented using **AWS S3**).
 
-    As ORM solution was chosen **Hibernate** library.
-
-    Implemented user authentication and authorization using **Spring security** module and **JWT token**.
-
-    As an alternative for user, implemented integration with **Google Sign-in API**.
+   As ORM solution was chosen **Hibernate** library.
+   
+   Implemented user authentication and authorization using **Spring security** module and **JWT token**.
+   
+   As an alternative for user, implemented integration with **Google Sign-in API**.
     
   ## **Frontend**
 
-    As a frontend solution was chosen **React** library based on **JavaScript** language.
+   As a frontend solution was chosen **React** library based on **JavaScript** language.
 
-    As a CSS framework was chosen **React Bootstrap** solution.
+   As a CSS framework was chosen **React Bootstrap** solution.
     
   ## **Summary**
   
   <table>
     <thead>
       <tr>
-       <td>       <em>Technologies Backend</em>         </td>
-       <td>      <em>Technologies Frontend</em>      </td>
+       <td>       <b>Technologies Backend</b>         </td>
+       <td>      <b>Technologies Frontend</b>      </td>
       </tr>
     </thead>
     <tbody>
