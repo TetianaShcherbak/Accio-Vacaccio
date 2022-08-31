@@ -49,7 +49,7 @@ Nice to see you interested in **Accio Vacaccio**.
   ## **Summary**
 
           |       Technologies Backend         |      Technologies Frontend      |
-          |:----------------------------------:|:-------------------------------:|
+          |------------------------------------|---------------------------------|
           | Java + Spring Boot                 |    JavaScript (ES6)             |
           | Spring Security (JWT token)        |    React.js                     |
           | AWS S3 bucket (for images storing) |    React Bootstrap              |
