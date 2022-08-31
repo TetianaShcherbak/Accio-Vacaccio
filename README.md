@@ -5,7 +5,7 @@ As truthly travel-lovers, we (4 developers) decided to create an App, which will
 This is a RESTful Single Page Web application, a graduation project, which was created in 6 Sprints (we used to work in SCRUM; 
 our Sprints were lasting for 1 week). 
 
-# **What do we offer? **
+# **What do we offer?**
 
 Accio Vacaccio offers services as:
 
@@ -49,7 +49,7 @@ Nice to see you interested in **Accio Vacaccio**.
   ## **Summary**
 
           |       Technologies Backend         |      Technologies Frontend      |
-          |------------------------------------|:-------------------------------:|
+          |:----------------------------------:|:-------------------------------:|
           | Java + Spring Boot                 |    JavaScript (ES6)             |
           | Spring Security (JWT token)        |    React.js                     |
           | AWS S3 bucket (for images storing) |    React Bootstrap              |
@@ -69,6 +69,7 @@ Nice to see you interested in **Accio Vacaccio**.
  ![react](https://user-images.githubusercontent.com/89380230/187660266-7bc715d4-8d1a-437b-86fb-d142ef3bdca9.png)
 
  - ``` npm start```.
+ 
 ![start](https://user-images.githubusercontent.com/89380230/187660284-6f150be7-ac4c-487b-8968-27b6c46bb72a.png)
 
 
