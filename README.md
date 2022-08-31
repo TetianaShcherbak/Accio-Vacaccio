@@ -51,8 +51,8 @@ Nice to see you interested in **Accio Vacaccio**.
   <table>
     <thead>
       <tr>
-       <td>`       **Technologies Backend**         `</td>
-       <td>`      **Technologies Frontend**      `</td>
+       <td>       <em>Technologies Backend</em>         </td>
+       <td>      <em>Technologies Frontend</em>      </td>
       </tr>
     </thead>
     <tbody>
