@@ -50,7 +50,7 @@ Nice to see you interested in **Accio Vacaccio**.
   
   <table>
     <thead>
-      <tr style="background-color:grey">
+      <tr>
        <td>       <b>Technologies Backend</b>         </td>
        <td>      <b>Technologies Frontend</b>      </td>
       </tr>
