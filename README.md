@@ -49,7 +49,7 @@ Nice to see you interested in **Accio Vacaccio**.
   ## **Summary**
   
   <table>
-    <thead>
+    <thead style="background-color:grey">
       <tr>
        <td>       <b>Technologies Backend</b>         </td>
        <td>      <b>Technologies Frontend</b>      </td>
